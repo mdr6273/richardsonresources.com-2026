@@ -73,6 +73,11 @@
     </div>
   </section>
 
+  <!-- ============ STATUS MESSAGE ============ -->
+  <div class="container">
+    <p id="ui-msg" style="margin: 0; padding: 0; font-size: 0.95rem; font-weight: 500;"></p>
+  </div>
+
   <!-- ============ CONTACT SECTION ============ -->
   <section class="section">
     <div class="container">
@@ -128,7 +133,8 @@
           <h3 style="margin-bottom: 8px;">Describe What You Need</h3>
           <p style="font-size: 0.9rem; margin-bottom: 28px;">Don't worry about getting the details exactly right—just describe the situation and we'll take it from there.</p>
 
-          <form id="contactForm" novalidate>
+          <form id="contactForm" action="/mailform" method="post">
+            <input type="hidden" name="redirect" value="/contact">
             <div class="form-group">
               <label for="name">Your Name</label>
               <input type="text" id="name" name="name" placeholder="Jane Smith" required>
@@ -138,10 +144,6 @@
               <input type="email" id="email" name="email" placeholder="jane@yourbusiness.com" required>
             </div>
             <div class="form-group">
-              <label for="company">Business / Company <span style="color:var(--text-light); font-weight:400;">(optional)</span></label>
-              <input type="text" id="company" name="company" placeholder="Acme Consulting LLC">
-            </div>
-            <div class="form-group">
               <label for="message">What Are You Working On?</label>
               <textarea id="message" name="message" placeholder="Tell me about your situation—what's going on, what you've tried, what you need. The more context, the better." required></textarea>
             </div>
@@ -149,7 +151,7 @@
               Send Message →
             </button>
             <p style="font-size: 0.78rem; color: var(--text-light); text-align: center; margin-top: 12px;">
-              This will open your email client. Alternatively, email <a href="mailto:info@richardsonresources.com">info@richardsonresources.com</a> directly.
+              If you prefer to use your email client, alternatively email <a href="mailto:info@richardsonresources.com">info@richardsonresources.com</a>
             </p>
           </form>
         </div>
@@ -222,6 +224,27 @@
     </div>
   </footer>
 
+  <script>
+    (function() {
+      var params = new URLSearchParams(window.location.search);
+      var msgType = params.get('ui-msgtype');
+      var msgData = params.get('ui-msgdata');
+      var valid = ['success', 'fail', 'failure', 'error', 'warn', 'warning'];
+      if (msgType && msgData && valid.indexOf(msgType.toLowerCase()) !== -1) {
+        var el = document.getElementById('ui-msg');
+        var type = msgType.toLowerCase();
+        if (type === 'success') {
+          el.style.color = '#1e7e45';
+        } else if (type === 'fail' || type === 'failure' || type === 'error') {
+          el.style.color = '#c0392b';
+        } else if (type === 'warn' || type === 'warning') {
+          el.style.color = '#9a6200';
+        }
+        el.style.padding = '14px 0';
+        el.textContent = decodeURIComponent(msgData);
+      }
+    })();
+  </script>
   <script src="nav.js"></script>
 </body>
 </html>
