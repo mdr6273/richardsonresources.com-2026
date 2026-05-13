@@ -24,6 +24,8 @@ our-services.html   → Services (4 services, feature grids)
 about-us.html       → About (background, timeline, skills)
 contact.html        → Contact (form, phone, email, FAQ)
 privacy-policy.html → Privacy Policy (TODO: add)
+sitemap.xml         → XML sitemap (update lastmod dates when pages change)
+robots.txt          → Allows all crawlers, references sitemap
 style.css           → All styles (single file)
 nav.js              → Mobile nav toggle, active link marking, form handler
 images/
