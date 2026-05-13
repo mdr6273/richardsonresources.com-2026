@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio | Richardson Resources</title>
+  <meta name="description" content="Websites and web projects built by Richardson Resources for small businesses. See examples of our web development work.">
+  <meta name="keywords" content="small business web design portfolio, website examples, Richardson Resources projects">
+  <meta property="og:title" content="Portfolio | Richardson Resources">
+  <meta name="theme-color" content="#1C3A6B">
+  <link rel="icon" href="images/favicon.jpg" type="image/jpeg">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ============ NAVIGATION ============ -->
+  <nav class="nav">
+    <div class="container nav__inner">
+      <a href="index.html" class="nav__logo">
+        <img src="images/LogoR.jpg" alt="Richardson Resources">
+        <div class="nav__logo-text">
+          Richardson Resources
+          <span>IT &amp; Web Services</span>
+        </div>
+      </a>
+      <div class="nav__links">
+        <a href="who-we-help.html">Who We Help</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="our-services.html">Our Services</a>
+        <a href="about-us.html">About Us</a>
+        <a href="contact.html" class="btn-primary">Contact Us</a>
+      </div>
+      <button class="nav__toggle" id="navToggle" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+  <div class="nav__mobile" id="mobileMenu">
+    <a href="who-we-help.html">Who We Help</a>
+    <a href="portfolio.html">Portfolio</a>
+    <a href="our-services.html">Our Services</a>
+    <a href="about-us.html">About Us</a>
+    <a href="contact.html">Contact Us</a>
+  </div>
+
+  <!-- ============ PAGE HERO ============ -->
+  <section class="page-hero">
+    <div class="container">
+      <div class="section-label">Portfolio</div>
+      <h1>Our Work</h1>
+      <p>A selection of websites and web projects built for small businesses. Each one is built clean, maintained properly, and easy to update.</p>
+    </div>
+  </section>
+
+  <!-- ============ PORTFOLIO GRID ============ -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-label">Web Projects</div>
+        <h2>Sites We've Built</h2>
+        <p>Every site here was designed and built from scratch—no page builders, no templates. Clean code, fast load times, and easy to maintain over time.</p>
+      </div>
+
+      <div class="portfolio-grid">
+
+        <!-- =============================================
+             PORTFOLIO ENTRY
+             To add a new entry, copy one card block below
+             and fill in: name, url, tag, description
+             ============================================= -->
+
+        <!-- ENTRY: Richardson Resources (this site) -->
+        <div class="portfolio-card">
+          <div class="portfolio-card__thumb" style="background: linear-gradient(135deg, #122848, #1C3A6B);">
+            <span class="portfolio-card__thumb-placeholder" style="color:rgba(255,255,255,0.3);">RR</span>
+          </div>
+          <div class="portfolio-card__body">
+            <div class="portfolio-card__tag">IT Services</div>
+            <h3>Richardson Resources</h3>
+            <p>This site—built as a live demonstration of the Claude-managed website model. Plain HTML/CSS, no page builder, fast and easy to update.</p>
+            <a href="index.html" class="btn btn-ghost" style="font-size:0.82rem; padding:8px 16px;">View Site →</a>
+          </div>
+        </div>
+
+        <!-- ADD NEW ENTRIES BELOW THIS LINE -->
+        <!-- Copy the block above, paste here, and update the content -->
+
+      </div>
+
+      <!-- Empty state — shown when only this site is in the portfolio -->
+      <div style="margin-top: 48px; padding: 48px 32px; background: var(--steel-pale); border-radius: var(--radius-lg); border: 1px dashed var(--steel-light); text-align: center;">
+        <div style="font-size: 2rem; margin-bottom: 12px;">🚀</div>
+        <h3 style="margin-bottom: 10px; font-size: 1.1rem;">More Projects Coming Soon</h3>
+        <p style="max-width: 420px; margin: 0 auto; font-size: 0.9rem;">This portfolio grows as new clients come on board. If you'd like your site listed here, <a href="contact.html">get in touch</a>.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============ ABOUT THE SERVICE ============ -->
+  <section class="section section--alt">
+    <div class="container">
+      <div class="about-split">
+        <div>
+          <div class="section-label">How It Works</div>
+          <h2>What Makes These Sites Different</h2>
+          <p>Every site in this portfolio was built with the same approach: clean code, no unnecessary dependencies, and a structure that's easy to update months or years later.</p>
+          <p>Most small business websites get built, then abandoned—hard to update, built on tools nobody remembers how to use. These are built differently.</p>
+          <ul class="check-list">
+            <li>Plain HTML/CSS — no page builder lock-in</li>
+            <li>Hosted on Cloudflare Pages for speed and reliability</li>
+            <li>SSL, DNS, and security configuration included</li>
+            <li>Can be updated with a single conversation with Claude</li>
+            <li>You own the code and the domain — always</li>
+          </ul>
+        </div>
+        <div>
+          <div style="background: var(--white); border: 1px solid var(--border); border-radius: var(--radius-lg); padding: 36px; box-shadow: var(--shadow-sm);">
+            <div class="section-label">Included With Every Site</div>
+            <div style="display: flex; flex-direction: column; gap: 14px; margin-top: 8px;">
+              <div style="display: flex; gap: 12px; align-items: flex-start;">
+                <span style="color: var(--accent); font-weight: 700; margin-top: 1px;">✓</span>
+                <span style="font-size: 0.9rem; color: var(--text-mid);">Custom design built for your business</span>
+              </div>
+              <div style="display: flex; gap: 12px; align-items: flex-start;">
+                <span style="color: var(--accent); font-weight: 700; margin-top: 1px;">✓</span>
+                <span style="font-size: 0.9rem; color: var(--text-mid);">Mobile-responsive from day one</span>
+              </div>
+              <div style="display: flex; gap: 12px; align-items: flex-start;">
+                <span style="color: var(--accent); font-weight: 700; margin-top: 1px;">✓</span>
+                <span style="font-size: 0.9rem; color: var(--text-mid);">Cloudflare setup for speed and security</span>
+              </div>
+              <div style="display: flex; gap: 12px; align-items: flex-start;">
+                <span style="color: var(--accent); font-weight: 700; margin-top: 1px;">✓</span>
+                <span style="font-size: 0.9rem; color: var(--text-mid);">SSL certificate and DNS configuration</span>
+              </div>
+              <div style="display: flex; gap: 12px; align-items: flex-start;">
+                <span style="color: var(--accent); font-weight: 700; margin-top: 1px;">✓</span>
+                <span style="font-size: 0.9rem; color: var(--text-mid);">SEO basics: clean structure, metadata, page speed</span>
+              </div>
+              <div style="display: flex; gap: 12px; align-items: flex-start;">
+                <span style="color: var(--accent); font-weight: 700; margin-top: 1px;">✓</span>
+                <span style="font-size: 0.9rem; color: var(--text-mid);">Contact form or click-to-call setup</span>
+              </div>
+            </div>
+            <div style="margin-top: 28px;">
+              <a href="contact.html" class="btn btn-primary">Get a Website →</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CTA BAND ============ -->
+  <section class="cta-band">
+    <div class="container">
+      <h2>Need a New Website?</h2>
+      <p>Describe what your business does and what you're looking for. We'll talk through what makes sense.</p>
+      <a href="contact.html" class="btn btn-primary">Start a Conversation</a>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__brand">
+          <img src="images/LogoR.jpg" alt="Richardson Resources">
+          <p>Practical IT support and web services for small businesses. No contracts, no complexity—just work that gets done right.</p>
+          <p style="margin-top:12px;">San Diego, California</p>
+        </div>
+        <div class="footer__col">
+          <h4>Pages</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="who-we-help.html">Who We Help</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="our-services.html">Our Services</a></li>
+            <li><a href="about-us.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Contact</h4>
+          <ul>
+            <li><a href="tel:17604684357">760-468-4357</a></li>
+            <li><a href="mailto:info@richardsonresources.com">info@richardsonresources.com</a></li>
+            <li><a href="privacy-policy.html">Privacy Policy</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span>© 2025 Richardson Resources. All Rights Reserved.</span>
+        <span>Site protected by <a href="https://www.cloudflare.com" target="_blank" rel="noopener">Cloudflare</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="nav.js"></script>
+</body>
+</html>

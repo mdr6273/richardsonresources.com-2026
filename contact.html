@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us | Richardson Resources</title>
+  <meta name="description" content="Get in touch with Richardson Resources for IT support, web development, or Microsoft 365 help. San Diego, California.">
+  <meta name="keywords" content="contact Richardson Resources, small business IT contact, San Diego IT support">
+  <meta property="og:title" content="Contact Us | Richardson Resources">
+  <meta name="theme-color" content="#1C3A6B">
+  <link rel="icon" href="images/favicon.jpg" type="image/jpeg">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ============ NAVIGATION ============ -->
+  <nav class="nav">
+    <div class="container nav__inner">
+      <a href="index.html" class="nav__logo">
+        <img src="images/LogoR.jpg" alt="Richardson Resources">
+        <div class="nav__logo-text">
+          Richardson Resources
+          <span>IT &amp; Web Services</span>
+        </div>
+      </a>
+      <div class="nav__links">
+        <a href="who-we-help.html">Who We Help</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="our-services.html">Our Services</a>
+        <a href="about-us.html">About Us</a>
+        <a href="contact.html" class="btn-primary">Contact Us</a>
+      </div>
+      <button class="nav__toggle" id="navToggle" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+  <div class="nav__mobile" id="mobileMenu">
+    <a href="who-we-help.html">Who We Help</a>
+    <a href="portfolio.html">Portfolio</a>
+    <a href="our-services.html">Our Services</a>
+    <a href="about-us.html">About Us</a>
+    <a href="contact.html">Contact Us</a>
+  </div>
+
+  <!-- ============ PAGE HERO ============ -->
+  <section class="page-hero">
+    <div class="container">
+      <div class="section-label">Contact Us</div>
+      <h1>Let's Talk</h1>
+      <p>No intake forms, no automated responses. Describe what you're dealing with and we'll figure out together whether it's a good fit.</p>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT SECTION ============ -->
+  <section class="section">
+    <div class="container">
+      <div class="contact-split">
+
+        <!-- Contact Info -->
+        <div class="contact-info">
+          <div class="section-label">Get in Touch</div>
+          <h3>Direct Contact</h3>
+
+          <div class="contact-detail">
+            <div class="contact-detail__icon">📞</div>
+            <div class="contact-detail__text">
+              <strong>Phone</strong>
+              <a href="tel:17604684357">760-468-4357</a>
+            </div>
+          </div>
+
+          <div class="contact-detail">
+            <div class="contact-detail__icon">✉️</div>
+            <div class="contact-detail__text">
+              <strong>Email</strong>
+              <a href="mailto:info@richardsonresources.com">info@richardsonresources.com</a>
+            </div>
+          </div>
+
+          <div class="contact-detail">
+            <div class="contact-detail__icon">📍</div>
+            <div class="contact-detail__text">
+              <strong>Location</strong>
+              <span>San Diego, California</span>
+            </div>
+          </div>
+
+          <div class="contact-detail">
+            <div class="contact-detail__icon">🌐</div>
+            <div class="contact-detail__text">
+              <strong>Remote Work</strong>
+              <span>Most work is done remotely. Local visits available when it makes sense.</span>
+            </div>
+          </div>
+
+          <div style="margin-top: 36px; padding: 24px; background: var(--steel-pale); border-radius: var(--radius); border: 1px solid var(--border);">
+            <h4 style="margin-bottom: 10px; font-size: 1rem;">What to Expect</h4>
+            <p style="font-size: 0.88rem; margin-bottom: 8px;">You'll get a response from the same person who will handle your project—not a sales team or a support queue.</p>
+            <p style="font-size: 0.88rem;">Most responses happen within one business day.</p>
+          </div>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="contact-form">
+          <div class="section-label">Send a Message</div>
+          <h3 style="margin-bottom: 8px;">Describe What You Need</h3>
+          <p style="font-size: 0.9rem; margin-bottom: 28px;">Don't worry about getting the details exactly right—just describe the situation and we'll take it from there.</p>
+
+          <form id="contactForm" novalidate>
+            <div class="form-group">
+              <label for="name">Your Name</label>
+              <input type="text" id="name" name="name" placeholder="Jane Smith" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="email" placeholder="jane@yourbusiness.com" required>
+            </div>
+            <div class="form-group">
+              <label for="company">Business / Company <span style="color:var(--text-light); font-weight:400;">(optional)</span></label>
+              <input type="text" id="company" name="company" placeholder="Acme Consulting LLC">
+            </div>
+            <div class="form-group">
+              <label for="message">What Are You Working On?</label>
+              <textarea id="message" name="message" placeholder="Tell me about your situation—what's going on, what you've tried, what you need. The more context, the better." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary" style="width: 100%; justify-content: center;">
+              Send Message →
+            </button>
+            <p style="font-size: 0.78rem; color: var(--text-light); text-align: center; margin-top: 12px;">
+              This will open your email client. Alternatively, email <a href="mailto:info@richardsonresources.com">info@richardsonresources.com</a> directly.
+            </p>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FAQ / WHAT TO EXPECT ============ -->
+  <section class="section section--alt">
+    <div class="container">
+      <div class="section-header--center">
+        <div class="section-label">Common Questions</div>
+        <h2>What to Expect</h2>
+      </div>
+      <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px; max-width: 900px; margin: 0 auto;">
+        <div style="background: var(--white); border: 1px solid var(--border); border-radius: var(--radius); padding: 28px;">
+          <h4 style="margin-bottom: 10px;">Do I need to sign a contract?</h4>
+          <p style="font-size: 0.9rem;">No. Most work is done project by project. If ongoing support makes sense for the situation, that can be discussed—but there's no requirement.</p>
+        </div>
+        <div style="background: var(--white); border: 1px solid var(--border); border-radius: var(--radius); padding: 28px;">
+          <h4 style="margin-bottom: 10px;">Who will actually do the work?</h4>
+          <p style="font-size: 0.9rem;">The same person you contacted. There are no junior techs, no hand-offs to someone else. Every project is handled directly.</p>
+        </div>
+        <div style="background: var(--white); border: 1px solid var(--border); border-radius: var(--radius); padding: 28px;">
+          <h4 style="margin-bottom: 10px;">Can you work with businesses outside San Diego?</h4>
+          <p style="font-size: 0.9rem;">Yes—most work is done remotely. Location rarely matters for IT support, web development, or cloud management.</p>
+        </div>
+        <div style="background: var(--white); border: 1px solid var(--border); border-radius: var(--radius); padding: 28px;">
+          <h4 style="margin-bottom: 10px;">How quickly do you respond?</h4>
+          <p style="font-size: 0.9rem;">Most inquiries get a response within one business day. For existing clients with something urgent, response time is generally faster.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__brand">
+          <img src="images/LogoR.jpg" alt="Richardson Resources">
+          <p>Practical IT support and web services for small businesses. No contracts, no complexity—just work that gets done right.</p>
+          <p style="margin-top:12px;">San Diego, California</p>
+        </div>
+        <div class="footer__col">
+          <h4>Pages</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="who-we-help.html">Who We Help</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="our-services.html">Our Services</a></li>
+            <li><a href="about-us.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Contact</h4>
+          <ul>
+            <li><a href="tel:17604684357">760-468-4357</a></li>
+            <li><a href="mailto:info@richardsonresources.com">info@richardsonresources.com</a></li>
+            <li><a href="privacy-policy.html">Privacy Policy</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span>© 2025 Richardson Resources. All Rights Reserved.</span>
+        <span>Site protected by <a href="https://www.cloudflare.com" target="_blank" rel="noopener">Cloudflare</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="nav.js"></script>
+</body>
+</html>
