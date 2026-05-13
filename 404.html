@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Page Not Found | Richardson Resources</title>
+  <meta name="description" content="The page you're looking for doesn't exist. Return to Richardson Resources.">
+  <meta name="robots" content="noindex, nofollow">
+
+  <!-- Theme & Icons -->
+  <meta name="theme-color" content="#1C3A6B">
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .not-found {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+    .not-found__hero {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      background: linear-gradient(135deg, var(--navy-dark) 0%, var(--navy) 60%, var(--navy-light) 100%);
+      padding: calc(var(--nav-height) + 60px) 0 80px;
+    }
+    .not-found__num {
+      font-family: var(--font-display);
+      font-size: clamp(6rem, 20vw, 12rem);
+      font-weight: 700;
+      line-height: 1;
+      color: rgba(255,255,255,0.08);
+      margin-bottom: -20px;
+    }
+    .not-found__links {
+      display: flex;
+      gap: 16px;
+      flex-wrap: wrap;
+      margin-top: 32px;
+    }
+  </style>
+</head>
+<body class="not-found">
+
+  <!-- ============ NAVIGATION ============ -->
+  <nav class="nav">
+    <div class="container nav__inner">
+      <a href="/" class="nav__logo">
+        <img src="images/Logoh.jpg" alt="Richardson Resources">
+        <div class="nav__logo-text">
+          Richardson Resources
+          <span>IT &amp; Web Services</span>
+        </div>
+      </a>
+      <div class="nav__links">
+        <a href="/who-we-help">Who We Help</a>
+        <a href="/portfolio">Portfolio</a>
+        <a href="/our-services">Our Services</a>
+        <a href="/about-us">About Us</a>
+        <a href="/contact" class="btn-primary">Contact Us</a>
+      </div>
+      <button class="nav__toggle" id="navToggle" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+  <div class="nav__mobile" id="mobileMenu">
+    <a href="/who-we-help">Who We Help</a>
+    <a href="/portfolio">Portfolio</a>
+    <a href="/our-services">Our Services</a>
+    <a href="/about-us">About Us</a>
+    <a href="/contact">Contact Us</a>
+  </div>
+
+  <!-- ============ 404 CONTENT ============ -->
+  <div class="not-found__hero">
+    <div class="container">
+      <div class="not-found__num">404</div>
+      <div class="section-label">Page Not Found</div>
+      <h1 style="color:var(--white);">That Page Doesn't Exist</h1>
+      <p style="color:var(--steel-light); font-size:1.1rem; max-width:480px; margin-top:12px;">The page you're looking for may have moved, been renamed, or never existed. Here are some helpful links.</p>
+      <div class="not-found__links">
+        <a href="/" class="btn btn-primary">Go Home</a>
+        <a href="/our-services" class="btn btn-outline">Our Services</a>
+        <a href="/contact" class="btn btn-outline">Contact Us</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__brand">
+          <img src="images/logof.jpg" alt="Richardson Resources">
+          <p>Practical IT support and web services for small businesses. No contracts, no complexity—just work that gets done right.</p>
+          <p style="margin-top:12px;">San Diego, California</p>
+        </div>
+        <div class="footer__col">
+          <h4>Pages</h4>
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/who-we-help">Who We Help</a></li>
+            <li><a href="/portfolio">Portfolio</a></li>
+            <li><a href="/our-services">Our Services</a></li>
+            <li><a href="/about-us">About Us</a></li>
+            <li><a href="/contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Contact</h4>
+          <ul>
+            <li><a href="tel:17604684357">760-468-4357</a></li>
+            <li><a href="mailto:info@richardsonresources.com">info@richardsonresources.com</a></li>
+            <li><a href="/privacy-policy">Privacy Policy</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span>© <span class="copyright-year">1973</span> Richardson Resources. All Rights Reserved.</span>
+        <span>Site protected by <a href="https://www.cloudflare.com" target="_blank" rel="noopener">Cloudflare</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="nav.js"></script>
+</body>
+</html>

@@ -1,5 +1,10 @@
 /* nav.js — Shared navigation behavior */
 
+// Dynamic copyright year
+document.querySelectorAll('.copyright-year').forEach(el => {
+  el.textContent = new Date().getFullYear();
+});
+
 // Mobile toggle
 document.addEventListener('DOMContentLoaded', function () {
   const toggle = document.getElementById('navToggle');

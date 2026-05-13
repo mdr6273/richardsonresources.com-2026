@@ -5,16 +5,67 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Richardson Resources | Small Business IT &amp; Web Services</title>
   <meta name="description" content="Practical IT support, Microsoft 365 management, and web development for small businesses. No contracts, no complexity — just work that gets done right.">
-  <meta name="keywords" content="small business IT support, Microsoft 365, Azure, web development, San Diego, IT consulting">
-  <meta property="og:title" content="Richardson Resources">
-  <meta property="og:description" content="Practical IT support and web services for small businesses. Project-based, no contracts.">
+
+  <!-- Open Graph -->
   <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Richardson Resources">
+  <meta property="og:title" content="Richardson Resources">
+  <meta property="og:description" content="Practical IT support, Microsoft 365 management, and web development for small businesses. No contracts, no complexity — just work that gets done right.">
+  <meta property="og:url" content="https://www.richardsonresources.com/">
+  <meta property="og:image" content="https://www.richardsonresources.com/images/og-image.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Richardson Resources — Small Business IT &amp; Web Services">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Richardson Resources">
+  <meta name="twitter:description" content="Practical IT support, Microsoft 365 management, and web development for small businesses. No contracts, no complexity — just work that gets done right.">
+  <meta name="twitter:image" content="https://www.richardsonresources.com/images/og-image.jpg">
+  <meta name="twitter:image:alt" content="Richardson Resources — Small Business IT &amp; Web Services">
+
+  <!-- Theme & Icons -->
   <meta name="theme-color" content="#1C3A6B">
   <link rel="icon" href="images/favicon.ico" type="image/x-icon">
   <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
   <link rel="canonical" href="https://www.richardsonresources.com/">
   <link rel="sitemap" type="application/xml" href="/sitemap.xml">
   <link rel="stylesheet" href="style.css">
+
+  <!-- Schema Markup -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "Richardson Resources",
+    "description": "Practical IT support, Microsoft 365 management, and web development for small businesses. No contracts, no complexity.",
+    "url": "https://www.richardsonresources.com",
+    "telephone": "+17604684357",
+    "email": "info@richardsonresources.com",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "San Diego",
+      "addressRegion": "CA",
+      "addressCountry": "US"
+    },
+    "areaServed": {
+      "@type": "Country",
+      "name": "United States"
+    },
+    "serviceType": [
+      "IT Support",
+      "Web Development",
+      "Microsoft 365 Management",
+      "Azure Management",
+      "Cloud Security",
+      "IT Consulting"
+    ],
+    "priceRange": "$$",
+    "sameAs": [
+      "https://www.richardsonresources.com"
+    ]
+  }
+  </script>
 </head>
 <body>
 
@@ -128,48 +179,82 @@
       </div>
       <div class="services-grid">
         <div class="service-card">
-          <div class="service-card__num">01</div>
-          <h3>Web Development &amp; Hosting</h3>
-          <p>Clean, mobile-friendly business websites built to last—with hosting, DNS, SSL, and Cloudflare setup included.</p>
-          <ul>
-            <li>Custom design built for small business needs</li>
-            <li>Fast, mobile-responsive, SEO-ready</li>
-            <li>Domain, DNS, and Cloudflare management</li>
-            <li>Hosted on Cloudflare Pages for speed and reliability</li>
-          </ul>
+          <div class="service-card__hero service-card__hero--web">
+            <div class="service-card__hero-bg"></div>
+            <div class="service-card__hero-deco">
+              <span></span><span></span><span></span><span></span><span></span>
+            </div>
+            <div class="service-card__hero-accent"></div>
+            <span class="service-card__hero-title">Web Development &amp; Hosting</span>
+          </div>
+          <div class="service-card__body">
+            <p>Clean, mobile-friendly business websites built to last—with hosting, DNS, SSL, and Cloudflare setup included.</p>
+            <ul>
+              <li>Custom design built for small business needs</li>
+              <li>Fast, mobile-responsive, SEO-ready</li>
+              <li>Domain, DNS, and Cloudflare management</li>
+              <li>Hosted on Cloudflare Pages for speed and reliability</li>
+            </ul>
+          </div>
         </div>
         <div class="service-card">
-          <div class="service-card__num">02</div>
-          <h3>Microsoft 365 &amp; Azure</h3>
-          <p>Full setup, migration, and ongoing management of Microsoft 365 and Azure environments—configured properly from the start.</p>
-          <ul>
-            <li>New tenant setup and configuration</li>
-            <li>Email migration from any platform</li>
-            <li>Teams, SharePoint, OneDrive setup</li>
-            <li>User accounts, licensing, and access</li>
-          </ul>
+          <div class="service-card__hero service-card__hero--m365">
+            <div class="service-card__hero-bg"></div>
+            <div class="service-card__hero-msq">
+              <div></div><div></div><div></div><div></div>
+            </div>
+            <div class="service-card__hero-accent"></div>
+            <span class="service-card__hero-title">Microsoft 365 &amp; Azure</span>
+          </div>
+          <div class="service-card__body">
+            <p>Full setup, migration, and ongoing management of Microsoft 365 and Azure environments—configured properly from the start.</p>
+            <ul>
+              <li>New tenant setup and configuration</li>
+              <li>Email migration from any platform</li>
+              <li>Teams, SharePoint, OneDrive setup</li>
+              <li>User accounts, licensing, and access</li>
+            </ul>
+          </div>
         </div>
         <div class="service-card">
-          <div class="service-card__num">03</div>
-          <h3>Cloud Security &amp; Support</h3>
-          <p>Practical security for small businesses—Cloudflare, backups, access reviews, and Microsoft 365 hardening.</p>
-          <ul>
-            <li>Cloudflare DNS, CDN, and WAF setup</li>
-            <li>Backup configuration and recovery testing</li>
-            <li>MFA and Conditional Access policies</li>
-            <li>Access reviews and security assessments</li>
-          </ul>
+          <div class="service-card__hero service-card__hero--security">
+            <div class="service-card__hero-bg"></div>
+            <div class="service-card__hero-shield">
+              <svg width="28" height="32" viewBox="0 0 28 32" fill="none" aria-hidden="true">
+                <path d="M14 1L2 6v10c0 8 5.4 14.8 12 16.7C20.6 30.8 26 24 26 16V6L14 1z" fill="rgba(74,159,212,0.35)" stroke="rgba(74,159,212,0.6)" stroke-width="1.5"/>
+              </svg>
+            </div>
+            <div class="service-card__hero-scanline"></div>
+            <div class="service-card__hero-accent"></div>
+            <span class="service-card__hero-title">Cloud Security &amp; Support</span>
+          </div>
+          <div class="service-card__body">
+            <p>Practical security for small businesses—Cloudflare, backups, access reviews, and Microsoft 365 hardening.</p>
+            <ul>
+              <li>Cloudflare DNS, CDN, and WAF setup</li>
+              <li>Backup configuration and recovery testing</li>
+              <li>MFA and Conditional Access policies</li>
+              <li>Access reviews and security assessments</li>
+            </ul>
+          </div>
         </div>
         <div class="service-card">
-          <div class="service-card__num">04</div>
-          <h3>IT Consulting &amp; Project Work</h3>
-          <p>Not every business needs monthly support. Project-based work is fine—scope it, agree on it, get it done.</p>
-          <ul>
-            <li>One-time setups and migrations</li>
-            <li>Technology assessments and second opinions</li>
-            <li>Vendor selection and evaluation</li>
-            <li>Documentation of your environment</li>
-          </ul>
+          <div class="service-card__hero service-card__hero--consulting">
+            <div class="service-card__hero-bg"></div>
+            <div class="service-card__hero-dots"></div>
+            <div class="service-card__hero-corner"></div>
+            <div class="service-card__hero-accent"></div>
+            <span class="service-card__hero-title">IT Consulting &amp; Project Work</span>
+          </div>
+          <div class="service-card__body">
+            <p>Not every business needs monthly support. Project-based work is fine—scope it, agree on it, get it done.</p>
+            <ul>
+              <li>One-time setups and migrations</li>
+              <li>Technology assessments and second opinions</li>
+              <li>Vendor selection and evaluation</li>
+              <li>Documentation of your environment</li>
+            </ul>
+          </div>
         </div>
       </div>
       <div style="margin-top: 36px;">
@@ -267,7 +352,7 @@
         </div>
       </div>
       <div class="footer__bottom">
-        <span>© 2025 Richardson Resources. All Rights Reserved.</span>
+        <span>© <span class="copyright-year">1973</span> Richardson Resources. All Rights Reserved.</span>
         <span>Site protected by <a href="https://www.cloudflare.com" target="_blank" rel="noopener">Cloudflare</a></span>
       </div>
     </div>

@@ -5,8 +5,26 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Privacy Policy | Richardson Resources</title>
   <meta name="description" content="Privacy policy for Richardson Resources. How we collect, use, and protect your information.">
-  <meta property="og:title" content="Privacy Policy | Richardson Resources">
+
+  <!-- Open Graph -->
   <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Richardson Resources">
+  <meta property="og:title" content="Privacy Policy | Richardson Resources">
+  <meta property="og:description" content="Privacy policy for Richardson Resources. How we collect, use, and protect your information.">
+  <meta property="og:url" content="https://www.richardsonresources.com/privacy-policy">
+  <meta property="og:image" content="https://www.richardsonresources.com/images/og-image.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Richardson Resources — Small Business IT &amp; Web Services">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Privacy Policy | Richardson Resources">
+  <meta name="twitter:description" content="Privacy policy for Richardson Resources. How we collect, use, and protect your information.">
+  <meta name="twitter:image" content="https://www.richardsonresources.com/images/og-image.jpg">
+  <meta name="twitter:image:alt" content="Richardson Resources — Small Business IT &amp; Web Services">
+
+  <!-- Theme & Icons -->
   <meta name="theme-color" content="#1C3A6B">
   <link rel="icon" href="images/favicon.ico" type="image/x-icon">
   <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
@@ -359,11 +377,47 @@
         </div>
       </div>
       <div class="footer__bottom">
-        <span>© 2025 Richardson Resources. All Rights Reserved.</span>
+        <span>© <span class="copyright-year">1973</span> Richardson Resources. All Rights Reserved.</span>
         <span>Site protected by <a href="https://www.cloudflare.com" target="_blank" rel="noopener">Cloudflare</a></span>
       </div>
     </div>
   </footer>
+
+  <!-- Scroll to top -->
+  <button id="scrollTop" aria-label="Scroll to top" style="
+    position: fixed;
+    bottom: 32px;
+    right: 32px;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: var(--accent);
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 1.2rem;
+    box-shadow: 0 4px 12px rgba(28,58,107,0.3);
+    opacity: 0;
+    transform: translateY(8px);
+    transition: opacity 0.25s ease, transform 0.25s ease;
+    z-index: 50;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  ">↑</button>
+  <script>
+    const btn = document.getElementById('scrollTop');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 400) {
+        btn.style.opacity = '1';
+        btn.style.transform = 'translateY(0)';
+      } else {
+        btn.style.opacity = '0';
+        btn.style.transform = 'translateY(8px)';
+      }
+    });
+    btn.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+  </script>
 
   <script src="nav.js"></script>
 </body>
