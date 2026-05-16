@@ -1,7 +1,7 @@
 # Richardson Resources — Site Guide & Cold Start Document
 > This file is the single source of truth for the Richardson Resources website.
 > Attach this file (or upload the site zip) to any future Claude conversation to instantly restore full context.
-> Last updated: 2026-05-13
+> Last updated: 2026-05-15
 
 ---
 
@@ -276,8 +276,8 @@ Tasks after deploying — not code changes, done in dashboards or browsers:
 - [ ] Main risk: large hero images. If score is low, compress or convert to WebP
 
 ### Contact Form
-- [ ] Replace mailto fallback in nav.js with POST URL
-- [ ] Add Cloudflare Turnstile for spam protection
+- [x] Replace mailto fallback in nav.js with POST URL — form POSTs to https://www.richardsonresources.com/mailform
+- [x] Add Cloudflare Turnstile for spam protection — implemented on contact.html
 
 ---
 
@@ -333,3 +333,9 @@ Search all HTML for `copyright-year">` and update the number in the span.
 | 2026-05-13 | Scroll to top button added to privacy-policy.html only. |
 | 2026-05-13 | _redirects file added for old Nicepage URLs. |
 | 2026-05-13 | Go-live checklist added to SITE_GUIDE (Search Console, PageSpeed, Cloudflare Transform Rule, contact form). |
+| 2026-05-13 | index.html + our-services.html: service card numbered badges (01–04) replaced with CSS mini hero headers. Each card has a distinct navy gradient and decorative motif (code lines, M365 squares, shield/scanline, dot grid). |
+| 2026-05-13 | style.css: .service-card__num removed, new .service-card__hero styles added for all four card variants. Decorative element opacity/brightness increased after review. |
+| 2026-05-13 | index.html + about-us.html: "One Person." changed to "One on One." in About section heading. |
+| 2026-05-13 | contact.html: Form action set to https://www.richardsonresources.com/mailform, method POST. Business/Company field removed. Fields are now name, email, message only. Hidden redirect field added (value: /contact). Button subtext updated to alternative email wording. |
+| 2026-05-15 | contact.html: Cloudflare Turnstile added — script in <head>, widget inside form above submit button. |
+| 2026-05-15 | nav.js: Removed mailto fallback form handler — form now submits natively via POST to mailform endpoint. |

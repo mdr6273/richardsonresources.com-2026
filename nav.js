@@ -33,18 +33,4 @@ document.addEventListener('DOMContentLoaded', function () {
       link.classList.add('active');
     }
   });
-
-  // Contact form handler (no backend — mailto fallback)
-  const form = document.getElementById('contactForm');
-  if (form) {
-    form.addEventListener('submit', function (e) {
-      e.preventDefault();
-      const name    = form.querySelector('[name="name"]').value.trim();
-      const email   = form.querySelector('[name="email"]').value.trim();
-      const message = form.querySelector('[name="message"]').value.trim();
-      const subject = encodeURIComponent('Website Inquiry from ' + name);
-      const body    = encodeURIComponent('Name: ' + name + '\nEmail: ' + email + '\n\nMessage:\n' + message);
-      window.location.href = 'mailto:info@richardsonresources.com?subject=' + subject + '&body=' + body;
-    });
-  }
 });
